@@ -87,6 +87,30 @@ h1:hover {
 }
 
 /* css style for Explore  */
+
+.exploreHeader {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%)
+    brightness(140%);
+}
+
+.exploreHeader a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
 .exploreContainer {
   width: 100%;
   min-height: 100vh;
@@ -97,10 +121,9 @@ h1:hover {
 
 .videoBox h2 {
   position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 110px;
+  top: 90%;
+  left: 1%;
+  font-size: 3rem;
   color: #fff;
   font-weight: 600;
   transition: 0.5s;
@@ -119,7 +142,7 @@ h1:hover {
   position: relative;
   width: 50%;
   height: 50vh;
-  border: 4px solid rgb(12, 3, 51, 0.3);
+  border: 3px solid rgb(12, 3, 51, 0.3);
   filter: grayscale(1);
   transition: 1s;
 }
@@ -128,10 +151,6 @@ h1:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.navBlock {
-  background-color: #00000024;
 }
 
 @media screen and (max-width: 500px) {
