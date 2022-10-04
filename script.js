@@ -7,3 +7,15 @@ for (let i = 0; i<videoclip.length; i++){
         videoclip[i].pause()
     })
 }
+
+const myfunction = () => {
+    toggle=!toggle;
+    if(toggle===true){
+        document.getElementById('explore2').style.left='0';
+        
+    }
+    else {
+        document.getElementById('explore2').style.left='-100%';
+    }
+}
+let toggle = false;
