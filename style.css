@@ -97,7 +97,7 @@ h1:hover {
   height: 7vh;
   padding: 0rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
@@ -129,16 +129,17 @@ h1:hover {
 
 .explorelogo2 {
   position: absolute;
-  top: -12px;
+  top: -11px;
   left: 0;
   width: 300px;
   z-index: 9;
   cursor: pointer;
 }
 
-.explorelogo1 {
-  width: 300px;
-  opacity: 0;
+.explorelogo2:hover {
+  filter: invert(50%) sepia(55%) saturate(5005%) hue-rotate(194deg)
+    brightness(105%) contrast(102%);
+  opacity: 70%;
 }
 
 .exploreContainer {
@@ -184,6 +185,8 @@ h1:hover {
 }
 
 @media screen and (max-width: 500px) {
+  /* Media queries (below mobile) for index */
+
   .container {
     width: 100%;
     height: 100vh;
@@ -223,9 +226,48 @@ h1:hover {
     margin-top: 20px;
   }
 
-  /* Media queries for index */
+  /*  Media queries (below mobile) for explore */
+
+  .explorelogo2 {
+    width: 15vh;
+    top: 0vh;
+  }
+
+  .exploreNav {
+    padding: 0 0.3rem;
+    height: 4.5vh;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .exploreNav a {
+    font-size: 7px;
+  }
+
+  .exploreNav li {
+    margin: 0.3rem;
+  }
+
+  .videoBox {
+    width: 100%;
+  }
+
+  .videoBox h2 {
+    position: absolute;
+    top: 94%;
+    left: 1%;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+  }
 }
+
 @media screen and (min-width: 500px) and (max-width: 800px) {
+  /* Media queries (Mobile) for index */
+
   .container {
     width: 100%;
     height: 100vh;
@@ -266,9 +308,48 @@ h1:hover {
     border-radius: 50px;
     margin-top: 20px;
   }
+  /* Media queries (Mobile) for explore */
+
+  .explorelogo2 {
+    width: 14vh;
+    top: 0vh;
+  }
+
+  .exploreNav {
+    padding: 0 0.3rem;
+    height: 4.5vh;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .exploreNav a {
+    font-size: 7px;
+  }
+
+  .exploreNav li {
+    margin: 0.3rem;
+  }
+
+  .videoBox {
+    width: 100%;
+  }
+
+  .videoBox h2 {
+    position: absolute;
+    top: 94%;
+    left: 1%;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1230px) {
+  /* Media queries (Tablet) for index */
+
   .container {
     width: 100%;
     height: 100vh;
@@ -306,5 +387,42 @@ h1:hover {
     padding: 0.8rem 3rem;
     border-radius: 50px;
     margin-top: 20px;
+  }
+
+  /* Media queries (Tablet) for explore */
+  .explorelogo2 {
+    width: 18vh;
+    top: 0vh;
+  }
+
+  .exploreNav {
+    padding: 0 1rem;
+    height: 6vh;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .exploreNav a {
+    font-size: 13px;
+  }
+
+  .exploreNav li {
+    margin: 0.5rem;
+  }
+
+  .videoBox {
+    width: 100%;
+  }
+
+  .videoBox h2 {
+    position: absolute;
+    top: 93%;
+    left: 1%;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
   }
 }
